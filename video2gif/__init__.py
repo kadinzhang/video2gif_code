@@ -25,7 +25,7 @@ except (ImportError,AssertionError) as e:
 
 # Load the configuration
 config=ConfigParser.SafeConfigParser()
-print('Loaded config file from %s' % config.read('%s/config.ini' % os.path.dirname(__file__))[0])
+print('Loaded config file from %s' % config.read('video2gif/config.ini')[0])
 
 # Load the mean snipplet (for mean subtraction)
 snipplet_mean = np.load(config.get('paths','snipplet_mean'))
