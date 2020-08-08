@@ -125,7 +125,7 @@ def set_weights(net,
     '''
 
     # Get C3D weights
-    with open(c3d_weight_file) as f:
+    with open(c3d_weight_file, 'rb') as f:
         print('Load pretrained weights from %s...' % c3d_weight_file)
         model = pickle.load(f)
 
