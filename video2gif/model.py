@@ -14,7 +14,7 @@ except ImportError as e:
 import lasagne
 import numpy as np
 import theano
-from cPickle import pickle
+import cPickle as pickle
 import theano.tensor as T
 import skimage.transform
 from skimage import color
