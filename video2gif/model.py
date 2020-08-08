@@ -11,7 +11,7 @@ try:
     from lasagne.layers.dnn import Conv3DDNNLayer, MaxPool3DDNNLayer
 except ImportError as e:
     print(e)
-import pickle
+from cPickle import pickle
 import lasagne
 import numpy as np
 import theano
